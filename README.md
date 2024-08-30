@@ -84,6 +84,12 @@ To simulate changing data (i.e. a company releases a new product and associated 
 
 NOTE: This script cannot manage the data from the initial demo build script as it does not include the metadata necessary for the `manage_vector_data.py` - the `build_demo.py` script needs to be improved to include metadata.
 
-* To add new PDF vector embeddings, simply run `manage_vector_data.py -a ./My-New-Product-Manual.pdf`
-* To delete a PDF vector embedding, simply run `manage_vector_data.py -d ./My-New-Product-Manual.pdf`
+* To add new PDF vector embeddings, simply run: `manage_vector_data.py -a ./My-New-Product-Manual.pdf`
+* To delete a PDF vector embedding, simply run: `manage_vector_data.py -d ./My-New-Product-Manual.pdf`
+
+Once the new data has been added to the vector DB, you can re-run the `rag_query.py` script with relevant questions about the new content to demonstrate how easy it is for RAG to handle new data without the need for finetuning a model.
+
+  **To demonstrate how the LLM takes the document chucks from the vector DB and stitches them into a coherant response**
+
+You might get the question about why LLMs are even necessary if the Vector DB is simply returning all the necessary information. To demostrate why an LLM is needed, you can show how the vector DB only returns snippets of the relevent document by runing the `vector_query.py` script. To drive the point home, re-run the `rag_query.py` script with the same query to see the difference in response.
 
