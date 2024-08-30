@@ -25,9 +25,25 @@ For each file add your OpenAI key and Activeloop token.
 * manage_vector_data.py
 * rag_query.py
 * vector_query.py
-
+  
+```
 os.environ["OPENAI_API_KEY"] = "<your OpenAI key>"
 os.environ['ACTIVELOOP_TOKEN'] = "<your activeloop toke>"
+```
+
+After adding your OpenAI key and Activeloop token, make sure to change the activeloop ID and dataset name you want to create/use.
+Check the following files:
+* build_demo.py
+* manage_vector_data.py
+* rag_query.py
+* vector_query.py
+
+```
+aloid="<your activeloop id>",
+aldsn="<a dataset name of your choosing>"
+```
+
+To run the demo:
 
 
 
