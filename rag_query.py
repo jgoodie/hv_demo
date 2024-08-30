@@ -54,7 +54,7 @@ class RAGQuery:
     
 
 if __name__ == "__main__":
-    rq = RAGQuery(k=10, overwrite=False)
+    rq = RAGQuery(k=10, aloid="jpgai", aldsn="hv_youtube_summarizer", overwrite=False)
     print()
     while True:
         q = input('QUERY:')

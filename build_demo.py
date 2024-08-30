@@ -138,7 +138,7 @@ if __name__ == "__main__":
             "./Smart-City-Operational-Intelligence-for-Smarter-Communities-Solution-Brief-3.pdf", 
             "./industry_roundtable_report_issue_0.pdf"]
 
-    vs = VideoSummarizer(urls=urls, pdfs=pdfs, job_id="hv", overwrite=True)
+    vs = VideoSummarizer(urls=urls, pdfs=pdfs, aloid="jpgai", aldsn="hv_youtube_summarizer", job_id="hv", overwrite=True) 
     vs.download()
     vs.transcribe()
     vs.process_text()
