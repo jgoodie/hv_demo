@@ -89,7 +89,7 @@ NOTE: This script cannot manage the data from the initial demo build script as i
 
 Once the new data has been added to the vector DB, you can re-run the `rag_query.py` script with relevant questions about the new content to demonstrate how easy it is for RAG to handle new data without the need for finetuning a model.
 
-  **To demonstrate how the LLM takes the document chucks from the vector DB and stitches them into a coherant response**
+  **To demonstrate how the LLM takes the document chucks from the vector DB and stitches them into a coherent response**
 
 You might get the question about why LLMs are even necessary if the Vector DB is simply returning all the necessary information. To demostrate why an LLM is needed, you can show how the vector DB only returns snippets of the relevent document by runing the `vector_query.py` script. To drive the point home, re-run the `rag_query.py` script with the same query to see the difference in response.
 
