@@ -14,3 +14,11 @@ This demo utilizes the following technology from:
 * LangChain to allow developers to create applications powered by large language models.
 
 <img width="828" alt="Screenshot 2024-08-30 at 12 46 44 PM" src="https://github.com/user-attachments/assets/e5f1538b-a417-4a8e-8b0f-92753ef77025">
+
+------------------------------------------------------------------------------
+To run this demo, you will first need to create accounts and obtain API keys for both products:
+* Activeloop: https://www.activeloop.ai/
+* OpenAI: https://platform.openai.com/docs/overview
+
+
+
