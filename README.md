@@ -74,6 +74,16 @@ pdfs = ["./smart-spaces-video-intelligence-solution-profile.pdf",
 3. Finally, simply run `build_demo.py` to build the demo. This process will take a while as the script downloads the YouTube content, transcribes the videos and processes any PDF content. The script will automatically create the document embeddings and upload them to Deeplake.
 
 **To run the demo:**
+
 To run the demo and query the data, simply run the `rag_query.py` script. 
 At the QUERY prompt, type your questions about the data. The query will be sent to deeplake and will return the top 4 semantically similar results. OpenAI will then take those results and return a coherent response.
+
+**To update the vector embeddings to simulate new content being added:**
+
+To simulate changing data (i.e. a company releases a new product and associated product manuals), you can simply add new vector embeddings with the `manage_vector_data.py` script. With this script you can ingest new PDF data or delete recently added PDF data. 
+
+NOTE: This script cannot manage the data from the initial demo build script as it does not include the metadata necessary for the `manage_vector_data.py` - the `build_demo.py` script needs to be improved to include metadata.
+
+* To add new PDF vector embeddings, simply run `manage_vector_data.py -a ./My-New-Product-Manual.pdf`
+* To delete a PDF vector embedding, simply run `manage_vector_data.py -d ./My-New-Product-Manual.pdf`
 
