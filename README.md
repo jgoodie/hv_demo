@@ -52,6 +52,8 @@ aldsn="<a dataset name of your choosing>"
 * `langchain_openai`
 * `langchain_community`
 
+------------------------------------------------------------------------------
+
 **To build the demo:**
 1. Make sure to update the list of Youtube videos that will be transcribed. Look at the `build_demo.py` file and update the list called `urls`.
 The current list of videos point to Hitachi Vantara marketing materials around smart cities. If you want to use a different set of videos, simply edit this list to point to something else.
@@ -73,10 +75,14 @@ pdfs = ["./smart-spaces-video-intelligence-solution-profile.pdf",
 ```
 3. Finally, simply run `build_demo.py` to build the demo. This process will take a while as the script downloads the YouTube content, transcribes the videos and processes any PDF content. The script will automatically create the document embeddings and upload them to Deeplake.
 
+------------------------------------------------------------------------------
+
 **To run the demo:**
 
 To run the demo and query the data, simply run the `rag_query.py` script. 
 At the QUERY prompt, type your questions about the data. The query will be sent to deeplake and will return the top 4 semantically similar results. OpenAI will then take those results and return a coherent response.
+
+------------------------------------------------------------------------------
 
 **To update the vector embeddings to simulate new content being added:**
 
@@ -88,6 +94,8 @@ NOTE: This script cannot manage the data from the initial demo build script as i
 * To delete a PDF vector embedding, simply run: `manage_vector_data.py -d ./My-New-Product-Manual.pdf`
 
 Once the new data has been added to the vector DB, you can re-run the `rag_query.py` script with relevant questions about the new content to demonstrate how easy it is for RAG to handle new data without the need for finetuning a model.
+
+------------------------------------------------------------------------------
 
   **To demonstrate how the LLM takes the document chucks from the vector DB and stitches them into a coherent response**
 
