@@ -16,7 +16,7 @@ This demo utilizes the following technology from:
 <img width="828" alt="Screenshot 2024-08-30 at 12 46 44 PM" src="https://github.com/user-attachments/assets/e5f1538b-a417-4a8e-8b0f-92753ef77025">
 
 ------------------------------------------------------------------------------
-To run this demo, you will first need to create accounts and obtain API keys for both products:
+Before running this demo, you will first need to create accounts and obtain API keys for both OpenAI's API and Activeloop:
 * Activeloop: https://www.activeloop.ai/
 * OpenAI: https://platform.openai.com/docs/overview
 
@@ -43,11 +43,16 @@ aloid="<your activeloop id>",
 aldsn="<a dataset name of your choosing>"
 ```
 
-Python Dependencies:
+**Python Dependencies:**
 
-<<< provide a list of python packages that need to be installed >>>
+* `yt_dlp`
+* `whisper`
+* `textwrap`
+* `langchain`
+* `langchain_openai`
+* `langchain_community`
 
-To build the demo:
+**To build the demo:**
 1. Make sure to update the list of Youtube videos that will be transcribed. Look at the `build_demo.py` file and update the list called `urls`.
 The current list of videos point to Hitachi Vantara marketing materials around smart cities. If you want to use a different set of videos, simply edit this list to point to something else.
 
@@ -66,6 +71,9 @@ pdfs = ["./smart-spaces-video-intelligence-solution-profile.pdf",
         "./Smart-City-Operational-Intelligence-for-Smarter-Communities-Solution-Brief-3.pdf", 
         "./industry_roundtable_report_issue_0.pdf"]
 ```
+3. Finally, simply run `build_demo.py` to build the demo. This process will take a while as the script downloads the YouTube content, transcribes the videos and processes any PDF content. The script will automatically create the document embeddings and upload them to Deeplake.
 
-
+**To run the demo:**
+To run the demo and query the data, simply run the `rag_query.py` script. 
+At the QUERY prompt, type your questions about the data. The query will be sent to deeplake and will return the top 4 semantically similar results. OpenAI will then take those results and return a coherent response.
 
