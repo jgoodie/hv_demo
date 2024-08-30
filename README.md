@@ -20,5 +20,14 @@ To run this demo, you will first need to create accounts and obtain API keys for
 * Activeloop: https://www.activeloop.ai/
 * OpenAI: https://platform.openai.com/docs/overview
 
+For each file add your OpenAI key and Activeloop token.
+* build_demo.py
+* manage_vector_data.py
+* rag_query.py
+* vector_query.py
+
+os.environ["OPENAI_API_KEY"] = "<your OpenAI key>"
+os.environ['ACTIVELOOP_TOKEN'] = "<your activeloop toke>"
+
 
 
