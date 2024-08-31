@@ -45,6 +45,8 @@ aldsn="<a dataset name of your choosing>"
 
 **Python Dependencies:**
 
+This demo was created using [Python 3.11.0](https://www.python.org/downloads/release/python-3110/) and it requires the following packages:
+
 * `yt_dlp`
 * `whisper`
 * `textwrap`
