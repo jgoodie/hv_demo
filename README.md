@@ -7,7 +7,7 @@
 
 This demo shows how organizations can utilize intelligent data retrieval methods such as retrieval augmented generation (RAG) to improve customer satisfaction and reduce support costs while enabling employees to be more efficient when searching for specific information. Specifically, this demo shows how organizations can implement multi-modal search to enable them to gain insights not just from textual data, but from audio, video, image, and other unstructured data formats.
 
-A video for this demo can be found here: [https://youtu.be/AxFG170WP8w](https://youtu.be/AxFG170WP8w)
+A video for this demo can be found here: [https://youtu.be/HZdMQPrU-b8](https://youtu.be/HZdMQPrU-b8)
 
 This demo utilizes the following technology from:
 
